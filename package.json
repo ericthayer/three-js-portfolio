@@ -1,0 +1,25 @@
+{
+  "name": "three-js-portfolio",
+  "version": "1.0.0",
+  "description": "Eric Thayer — Design Engineer portfolio. Horizontal-scrolling three.js experience.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://localhost:26831/ericthayer/three-js-portfolio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.6"
+  },
+  "private": true,
+  "type": "module"
+}

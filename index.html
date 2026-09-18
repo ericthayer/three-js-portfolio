@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eric Thayer — Design Engineer. Agentic design systems, frontend development, and design engineering." />
+    <meta name="theme-color" content="#0e0e10" />
+    <title>Eric Thayer — Design Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <canvas id="gl" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="wordmark" href="#hero" data-nav>Eric Thayer</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#work" data-nav>Work</a>
+        <a href="#about" data-nav>About</a>
+        <a href="#contact" data-nav>Contact</a>
+      </nav>
+    </header>
+
+    <main id="scroll-container">
+      <div id="track" class="track">
+        <!-- Hero -->
+        <section class="panel panel--hero" id="hero">
+          <p class="hero-eyebrow">Design Engineer &amp; Creative Developer</p>
+          <h1 class="hero-title">
+            <span class="hero-line">Crafting</span>
+            <span class="hero-line hero-line--accent">agentic design systems</span>
+            <span class="hero-line">at the edge of design &amp; code</span>
+          </h1>
+          <p class="hero-sub">
+            Two decades of expertise across agentic design systems,
+            frontend development, and design engineering.
+          </p>
+          <p class="scroll-hint" aria-hidden="true">
+            <span class="scroll-hint__label">Scroll</span>
+            <span class="scroll-hint__arrow">→</span>
+          </p>
+        </section>
+
+        <!-- Projects injected here by JS -->
+        <div id="work" class="panels-work"></div>
+
+        <!-- About -->
+        <section class="panel panel--about" id="about">
+          <h2 class="section-title">About</h2>
+          <p class="about-copy">
+            I&rsquo;m Eric — a design engineer who has spent an extensive career
+            building the connective tissue between design and engineering.
+            I architect <em>agentic design systems</em> that let AI and humans
+            design together, ship production frontend code, and prototype
+            experiences that make teams say &ldquo;we can actually build this.&rdquo;
+          </p>
+          <ul class="about-skills">
+            <li>Agentic design systems</li>
+            <li>Frontend development</li>
+            <li>Design engineering</li>
+            <li>Creative coding · WebGL</li>
+          </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="panel panel--contact" id="contact">
+          <h2 class="contact-title">Let&rsquo;s build<br />something elegant.</h2>
+          <a class="contact-link" href="mailto:hello@ethayer.design">hello@ethayer.design</a>
+          <div class="contact-socials">
+            <a href="https://github.com/ericthayer" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Case study overlay -->
+    <div id="case-study" class="case-study" aria-hidden="true">
+      <button class="case-study__close" aria-label="Close case study">✕</button>
+      <div class="case-study__inner">
+        <div class="case-study__hero"></div>
+        <div class="case-study__content">
+          <p class="case-study__index"></p>
+          <h2 class="case-study__title"></h2>
+          <p class="case-study__meta"></p>
+          <p class="case-study__body"></p>
+          <ul class="case-study__highlights"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
